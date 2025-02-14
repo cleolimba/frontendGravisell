@@ -9,6 +9,7 @@ interface FormData {
   role: string;
   password: string;
   confirmPassword: string;
+  sexe :string
 }
 
 const Form = () => {
@@ -19,6 +20,7 @@ const Form = () => {
     role: "Administrateur",
     password: "",
     confirmPassword: "",
+    sexe : ""
   });
 
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -71,6 +73,20 @@ const Form = () => {
               placeholder="Prénom"
               className="w-full px-2 py-2 rounded bg-gray-800"
             />
+          </div>
+
+          <div className="mt-8">
+            <label className="block text-lg mb-2 font-abhaya">Sexe</label>
+            <select
+              name="sexe"
+              value={formData.sexe}
+              onChange={handleChange}
+              className="w-full p-2 rounded bg-gray-800 font-abhaya"
+            >
+              <option value="">Choisir...</option>
+              <option value="male">Masculin</option>
+              <option value="female">Féminin</option>
+            </select>
           </div>
 
           <div className="space-y-2 mt-8">

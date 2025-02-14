@@ -2,6 +2,12 @@ import Header from "../Components/Header";
 import LoginForm from "../Components/LoginForm";
 import WelcomeSection from "../Components/WelcomeSection";
 
+// const roleValide = 
+//   if ("role" === "administrateur"){
+//     ""
+//   }
+//   else ""
+
 const LoginPage = () => (
   <div className="min-h-screen bg-black text-white">
     <Header />
